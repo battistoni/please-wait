@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'VCR';
+        src: url('font/VCROSDMono.eot') format('eot'),
+             url('font/VCROSDMono.svg') format('svg'),
+             url('font/VCROSDMono.ttf') format('ttf'),
+             url('font/VCROSDMono.woff') format('woff'),
+             url('font/VCROSDMono.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Suisse';
+        src: url('font/Suisse/SuisseIntl-Regular.eot') format('eot'),
+             url('font/Suisse/SuisseIntl-Regular.svg') format('svg'),
+             url('font/Suisse/SuisseIntl-Regular.ttf') format('ttf'),
+             url('font/Suisse/SuisseIntl-Regular.woff') format('woff'),
+             url('font/Suisse/SuisseIntl-Regular.woff2') format('woff2');
+}
+
+/* TEMPLATE */
+.flex-display-center-center{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: center; /* main axis of conatiner - H */
+}
+.flex-display-center-start{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: flex-start; /* main axis of conatiner - H */
+}
+.flex-display-start-center{
+    display: flex;
+    align-content: flex-start; /* cross axis of container - V */
+    align-items: flex-start; /* all children on cross axis - vertical center*/
+    justify-content: center; /* main axis of conatiner - H */
+}
+.flex-display-sa-start{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: flex-start; /* all children on cross axis - vertical center*/
+    justify-content: space-around; /* main axis of conatiner - H */
+}
+.flex-display-sa-center{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: space-around; /* main axis of conatiner - H */
+}
+.flex-display-sb-center{
+    display: flex;
+    align-content: center; /* cross axis of container - V */
+    align-items: center; /* all children on cross axis - vertical center*/
+    justify-content: space-between; /* main axis of conatiner - H */
+}
+.column{
+    flex-direction: column;
+}
+
+
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: VCR;
+    font-size: 0.92rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.splash-screen-wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+.splash-screen{
+    height: 95vh;
+    width: 100vw;
+    background-image: url('../media/splashscreen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.start-button{
+    position: absolute;
+}
+.start-button img {
+    margin-bottom: 15px;
+    width: 50%;
+}
+.pressed{
+    position: absolute;
+}
+
+/* PLEASE WAIT */
+.main-wrapper{
+    height: 100vh;
+    justify-content: space-between;
+}
+.please-wait{
+    margin-top: 17%;
+}
+.wait{
+    width: 90%;
+    margin-bottom: 12%;
+}
+.dot{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    margin: 0 6px;
+}
+/* .dot:first-of-type{
+    background-color: black;
+} */
+.black{
+    background-color: black;
+}
+.buttons-wrapper{
+    font-size: 36px;
+}
+.button{
+    padding: 0px 32px;
+    height: 20vh;
+}
+.entertain{
+    border: 1px solid;
+    border-right: none;
+    border-left: none;
+}
+.gif{
+    position: fixed;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+
+/* RESULT */
+.result-parallax{
+    font-size: 30px;
+    height: 56vh;
+    width: 100vw;
+    padding: 12% 0 0 24px;
+    border-bottom: 1px solid;
+    position: fixed;
+    background-color: white;
+}
+.stretch{
+    font-size: 3.3rem;
+    transform: scale(1, 4);
+    transform-origin: top center;
+    color: white;
+    -webkit-text-stroke: 0.4px black;
+    line-height: 44px;
+}
+.wait-time{
+    margin-bottom: 50%;
+}
+.entertain-res{
+    line-height: 34px;
+}
+.main{
+    position: absolute;
+    width: 100vw;
+    top: 64vh;
+    z-index: -1;
+}
+.title{
+    color: black;
+    -webkit-text-stroke: 0px black;
+    margin-bottom: 42%;
+}
+.explanation{
+    width: 90%;
+    font-family: Suisse;
+    font-size: 22px;
+}
+.red{
+    font-family: VCR;
+    width: 95%;
+    font-size: 36px;
+    text-decoration: underline;
+    color: #FF0000;
+    margin: 20px 0;
+}
+.normal{
+    font-family: VCR;
+    font-size: 36px;
+    margin-top: 32px;
+    line-height: 16px;
+}
+.answer{
+    margin-bottom: 42px;
+}
+
+@media screen and (max-width: 380px) {
+    .result-parallax{
+        height: 64vh;
+        padding: 10% 0 2% 24px;
+    }
+    .stretch{
+        font-size: 3rem;
+    }
+    .wait-time{
+        margin-bottom: 46%;
+    }
+}
