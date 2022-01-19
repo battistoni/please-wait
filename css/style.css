@@ -87,9 +87,16 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+    animation: blink 0.6s ease-in-out infinite alternate-reverse;
 }
+@keyframes blink {
+    from { opacity: 1; }
+    to{ opacity: 0; }
+}
+
 .start-button{
     position: absolute;
+    top: 48%;
 }
 .start-button img {
     margin-bottom: 15px;
@@ -106,6 +113,7 @@ a {
 }
 .please-wait{
     margin-top: 17%;
+    animation: blink 0.6s ease-in-out infinite alternate-reverse;
 }
 .wait{
     width: 100%;
