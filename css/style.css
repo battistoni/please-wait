@@ -64,6 +64,7 @@ body{
     padding: 0;
     font-family: VCR;
     font-size: 0.92rem;
+    height: -webkit-fill-available;
 }
 a {
     text-decoration: none;
