@@ -95,6 +95,7 @@ a {
 /* PLEASE WAIT */
 .main-wrapper{
     height: 100vh;
+    max-height: 100vh;
     justify-content: space-between;
 }
 .please-wait{
@@ -110,9 +111,6 @@ a {
     background-color: white;
     margin: 0 6px;
 }
-/* .dot:first-of-type{
-    background-color: black;
-} */
 .black{
     background-color: black;
 }
