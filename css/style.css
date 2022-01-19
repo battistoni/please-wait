@@ -75,18 +75,18 @@ a {
     width: 100vw;
 }
 .splash-screen{
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     background-image: url('../media/splashscreen.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 .start-button{
     position: absolute;
 }
 .start-button img {
     margin-bottom: 15px;
-    width: 50%;
 }
 .pressed{
     position: absolute;
@@ -101,7 +101,7 @@ a {
     margin-top: 17%;
 }
 .wait{
-    width: 90%;
+    width: 100%;
     margin-bottom: 12%;
 }
 .dot{
@@ -141,9 +141,8 @@ a {
 /* RESULT */
 .result-parallax{
     font-size: 30px;
-    height: 56vh;
     width: 100vw;
-    padding: 12% 0 0 24px;
+    padding: 6% 0 6% 24px;
     border-bottom: 1px solid;
     position: fixed;
     background-color: white;
@@ -156,22 +155,26 @@ a {
     -webkit-text-stroke: 0.4px black;
     line-height: 44px;
 }
+.big{
+    font-size: 64px;
+}
+.home{
+    position: absolute;
+    top: 8%;
+    right: 10%;
+}
 .wait-time{
-    margin-bottom: 50%;
+    margin-bottom: 14%;
 }
-.entertain-res{
-    line-height: 34px;
-}
+
 .main{
     position: absolute;
-    width: 100vw;
-    top: 64vh;
+    padding: 6% 0 0% 24px;
+    top: 40vh;
     z-index: -1;
 }
 .title{
-    color: black;
-    -webkit-text-stroke: 0px black;
-    margin-bottom: 42%;
+    margin-bottom: 12%;
 }
 .explanation{
     width: 90%;
@@ -190,13 +193,10 @@ a {
     font-family: VCR;
     font-size: 36px;
     margin-top: 32px;
-    line-height: 16px;
-}
-.answer{
-    margin-bottom: 42px;
+    width: 103%;
 }
 
-@media screen and (max-width: 380px) {
+/* @media screen and (max-width: 380px) {
     .result-parallax{
         height: 64vh;
         padding: 10% 0 2% 24px;
@@ -207,4 +207,4 @@ a {
     .wait-time{
         margin-bottom: 46%;
     }
-}
+} */

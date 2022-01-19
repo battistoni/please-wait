@@ -16,6 +16,9 @@ $(document).ready(function(){
         $('.entertain-res').text('no')
         console.log('no')
     }
+
+    var height = $('.result-parallax').get(0).getBoundingClientRect();
+    $('.main').css('top', height.height)
 })
 
 $('.answer').click(function(){
